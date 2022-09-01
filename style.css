@@ -8,23 +8,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
     margin: auto;
+    height: 100vh;
 }
 .container {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color:rgb(16, 28, 42);
   align-items: center;
   justify-content: center;
   width: 400px;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight:400;
 }
-input {
-  width: 250px;
-  height: 40px;
-  background-color: black;
+.display-screen {
+  width: 350px;
+  height: 30px;
+  background-color:rgb(16, 28, 42);
+  border: none;
+  pointer-events: none;
+  color: white;
+  text-align: end;
+  font-size: 25px;
+  font-weight: 700;
 }
 .dispaly {
   padding: 20px;
@@ -34,13 +40,13 @@ input {
   flex-direction: row;
   width: 100%;
   color: white;
-  background-color: rgb(241, 94, 94);
+  background-color: rgb(223, 34, 102);
   justify-content: center;
   font-size: 1rem;
 
 }
 .row2 {
-    margin: 5px;
+    margin: 1px;
   display: flex;
   flex-direction: row;
   color: white;
@@ -49,7 +55,11 @@ input {
 }
 .operator-button {
   margin:10px 30px;
+  cursor: pointer;
+
 }
 .digit-button {
-    margin:15px 50px;
+    margin:5px 60px;
+    cursor: pointer;
+
 }
