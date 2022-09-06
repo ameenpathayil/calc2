@@ -6,40 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="dispaly">
-        <input type="text" class="display-screen" id="result-screen" />
+        <input type="text" class="display-screen" id="value" />
       </div>
       <div class="row1">
-        <div onclick="clickButton('/');" class="operator-button">/</div>
-        <div onclick="clickButton('*');" class="operator-button">x</div>
-        <div onclick="clickButton('-');" class="operator-button">-</div>
-        <div onclick="clickButton('+');" class="operator-button">+</div>
-        <div onclick="clearScreen( );" class="operator-button">DEL</div>
+        <div  class="operator-button operation">/</div>
+        <div  class="operator-button operation">x</div>
+        <div  class="operator-button operation">-</div>
+        <div  class="operator-button operation">+</div>
+        <div  class="operator-button" id="del">DEL</div>
       </div>
       <div class="row2">
-        <div onclick="clickButton(1);" class="digit-button">1</div>
-        <div onclick="clickButton(2);" class="digit-button">2</div>
-        <div onclick="clickButton(3);" class="digit-button">3</div>
+        <div  class="digit-button numbers">1</div>
+        <div  class="digit-button numbers">2</div>
+        <div  class="digit-button numbers">3</div>
       </div>
       <div class="row2">
-        <div onclick="clickButton(4);" class="digit-button">4</div>
-        <div onclick="clickButton(5);" class="digit-button">5</div>
-        <div onclick="clickButton(6);" class="digit-button">6</div>
+        <div class="digit-button numbers">4</div>
+        <div  class="digit-button numbers">5</div>
+        <div class="digit-button numbers">6</div>
       </div>
       <div class="row2">
-        <div onclick="clickButton(7);" class="digit-button">7</div>
-        <div onclick="clickButton(8);" class="digit-button">8</div>
-        <div onclick="clickButton(9);" class="digit-button">9</div>
+        <div  class="digit-button numbers">7</div>
+        <div  class="digit-button numbers">8</div>
+        <div  class="digit-button numbers">9</div>
       </div>
       <div class="row2">
-        <div onclick="clickButton(0);" class="digit-button">0</div>
-        <div onclick="clickButton('.');" class="digit-button">.</div>
-        <div onclick="equalClick( );" class="digit-button">=</div>
+        <div  class="digit-button numbers">0</div>
+        <div  class="digit-button numbers">.</div>
+        <div  class="digit-button " id="equal">=</div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
